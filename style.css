@@ -1,0 +1,362 @@
+/*=================================
+My Custom CSS
+=============
+
+Author: Mohammad Saifur Rahman
+Updated: February 2017
+Notes: Hand Coded for RR Foundation
+
+*===================================/
+
+/*------Start Base CSS------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family:AnyConv.com__GothamRounded-Book;
+}
+@font-face {
+	font-family: "AnyConv.com__Gotham Rounded Bold";
+	src: url('fonts/AnyConv.com__Gotham Rounded Bold.woff') format('woff');
+}
+@font-face {
+	font-family: "AnyConv.com__GothamRounded-Book";
+	src: url('fonts/AnyConv.com__GothamRounded-Book.woff') format('woff');
+}
+img {
+    height: auto;
+    max-width: 100%;
+	border: none;
+}
+body, html {
+    height: 100%;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a:focus {
+	color: #333;
+	text-decoration: none;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+	margin-top: 0;
+	font-family: AnyConv.com__Gotham Rounded Bold;
+}
+p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.float_left {
+	float: left;
+}
+.float_right {
+	float: right;
+}
+.fix:before, .fix:after {
+	content: "";
+	display: table;
+}
+.fix:after {
+	clear: both;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.section_padding {
+	padding: 80px 0;
+}
+/*------End Base CSS------*/
+
+/*------Start Here Global CSS------*/
+/*------Header CSS------*/
+.header-area{
+	background-image: url(assets/img/header-bg.jpg);
+	background-size: cover;
+	background-position: bottom;
+	color: #fff;
+	padding: 30px 0;
+}
+.mainmenu ul li {
+  display: inline;
+  margin: 0 35px;
+}
+.mainmenu li a {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.mainmenu li:hover a {
+  color: #16a085;
+}
+.header-area a {
+  color: #fff;
+}
+.welcome-text {
+    padding: 170px 0;
+}
+.welcome-text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.btn {
+    display: inline-block;
+    background: #16a085;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	border-radius: 4px;
+	transition: .3s;
+	color: #ffffff;
+}
+.btn:hover {
+    display: inline-block;
+	background: #ffffff;
+	color: #16a085;
+}
+.social-media i.fa {
+    font-size: 25px;
+    margin-left: 20px;
+	transition: .3s;
+}
+.social-media i.fa:hover {
+    color: #16a085;
+}
+
+/*------About CSS------*/
+
+
+.about-area {
+    background: #f5f6f7;
+}
+.about-title h2 {
+    color: #16a085;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.3em;
+    font-size: 24px;
+}
+.about-title p {
+    margin: 40px 0;
+}
+.about-title p span {
+    font-weight: bold;
+}
+.about-title {
+    padding-top: 55px;
+}
+.about-img {
+    background-image: url(assets/img/hand.png);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 343px;
+    margin-top: 50px;
+}
+/*------About CSS------*/
+
+.design-img {
+    background-image: url(assets/img/mobile.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 430px;
+    margin-top: 85px;
+}
+.design-tex h2 {
+    color: #16a085;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.3em;
+    font-size: 24px;
+}
+.design-tex p {
+    margin: 40px 0;
+}
+.design-tex p span {
+    font-weight: bold;
+}
+.design-tex {
+    padding-top: 85px;
+}
+.carrosel i.fa {
+    font-size: 20px;
+    color: #000;
+    padding-right: 10px;
+}
+.carrosel {
+    margin-top: 20px;
+}
+/*------Community CSS------*/
+.community-area{
+	background: #f5f6f7;
+	padding: 100px 0;
+}
+.single-community{
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+}
+.single-bg-1{
+	background-image: url(assets/img/leaf.jpg);
+}
+.single-bg-2{
+	background-image: url(assets/img/van.png);
+}
+.single-bg-3{
+	background-image: url(assets/img/leaf.jpg);
+}
+.community-hover {
+    height: 100%;
+    width: 100%;
+    background: #f5f6f7;
+    color: #373737;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    padding: 20px;
+}
+.active{
+    background: #f5f6f7;
+    color: #373737;
+    padding: 20px;}
+.single-community:hover .community-hover {
+    opacity: 1;
+    visibility: visible;
+}
+.community-hover h2 {
+	font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+	color: #373737;
+	margin: 20px 0;
+}
+/*------subscribe CSS------*/
+.subscribe-area{
+	background-image: url(assets/img/subscribe-bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.subscribe-text h2 {
+	font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+	color: #ffffff;
+	margin: 20px 0;
+}
+.subscribe-text input[type="email"] {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #373737;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 3px 0 3px 0 ;
+}
+.subscribe-text button {
+    background: #16a085;
+	padding: 10px;
+	color: #ffffff;
+    border-radius: 3px;
+    box-sizing: border-box;
+	border: none;
+    border-radius: 0 3px 3px 0 ;
+    margin-left: -5px;
+}
+.subscribe-text{
+	padding: 300px 0;
+}
+/*------Download CSS------*/
+.download-area {
+    background: #f5f6f7;
+    padding: 80px 0;
+}
+.download-text h2{
+	font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+	color: #373737;
+	margin: 20px 0;
+
+}
+.download-btn ul li {
+    display: inline;
+}
+.download-btn ul li a {
+    display: inline-block;
+    background: #1abc9c;
+    color: #fff;
+    text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 3px 0 0 3px;
+	border: 1px solid transparent;
+	transition:.3s;
+	padding-right: 50px;
+}
+.download-btn ul li:hover a {
+	background: #fff;
+	color: #373737;
+	border: 1px solid #1abc9c;
+}
+.download-btn li:nth-child(2) a,
+.download-btn li:nth-child(4) a {
+    margin-left: -5px;
+	background: #16a085;
+	margin-right: 30px;
+	border-radius: 0;
+	padding-right: 20px;
+}
+.download-btn {
+    padding: 30px 0;
+}
+/*------Footer CSS------*/
+.footer-menu ul {
+    margin-bottom: 20px;
+}
+.footer-menu ul li {
+    display: inline;
+}
+.footer-menu ul li a {
+    display: inline-block;
+    padding-right: 20px;
+	color: #373737;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.footer-area{
+	padding: 30px 0;
+}
+.footer-menu p{
+	color:#373737;
+}
+
+
+
+
+
+
+
+
+
+
+
